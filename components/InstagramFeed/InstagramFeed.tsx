@@ -1,0 +1,74 @@
+/* library package */
+import { FC, useState } from 'react'
+import { InstagramFeed as InstaFeed } from '@sirclo/nexus'
+import dynamic from 'next/dynamic'
+
+/* component */
+const Placeholder = dynamic(() => import('components/Placeholder'));
+const InstagramQuickView = dynamic(() => import('@sirclo/nexus').then((mod) => mod.InstagramQuickView))
+
+const classesInstagramQuickView = {
+  quickViewBackgroundClassName: "instagramFeed_quickviewBackground",
+  quickViewContentClassName: "instagramFeed_quickviewInner",
+  closeButtonClassName: "btn instagramFeed_quickviewButton",
+  quickViewAnchorClassName: "instagramFeed_quickviewLink",
+  quickViewMediaClassName: "instagramFeed_quickviewImage"
+}
+
+const classesInstagramFeed = {
+  containerClassName: "instagramFeed",
+  mediaClassName: "instagramFeed_media",
+  anchorClassName: "instagramFeed_mediaLink",
+  imageClassName: "instagramFeed_mediaImage"
+}
+
+const classesPlaceholderInstafeed = {
+  placeholderImage: "placeholder-item placeholder-item__instagramfeed"
+}
+
+type TSize = {
+  width: Number
+}
+
+const InstagramFeed: FC<{size: TSize}> = ({ size }) => {
+  const [instagramQuickView, setInstagramQuickView] = useState<boolean>(false);
+  const [instagramMedia, setInstagramMedia] = useState<any>({});
+
+  return (
+    <div className="d-flex justify-content-center">
+      {(instagramQuickView && instagramMedia) &&
+        <InstagramQuickView
+          classes={classesInstagramQuickView}
+          showQuickView={setInstagramQuickView}
+          media={instagramMedia}
+          thumborSetting={{
+            width: size.width < 575 ? 350 : 500,
+            format: 'webp',
+            quality: 85,
+          }}
+        />
+      }
+
+      <InstaFeed
+        slidesPerPage={size.width < 575 ? 2 : 6}
+        slidesPerScroll={1}
+        autoPlay={10000}
+        infinite
+        classes={classesInstagramFeed}
+        withQuickview
+        showQuickView={setInstagramQuickView}
+        getQuickViewMedia={setInstagramMedia}
+        loadingComponent={
+          <Placeholder classes={classesPlaceholderInstafeed} withImage />
+        }
+        thumborSetting={{
+          width: size.width < 575 ? 250 : 400,
+          format: 'webp',
+          quality: 85,
+        }}
+      />
+    </div>
+  )
+}
+
+export default InstagramFeed

@@ -1,0 +1,139 @@
+.thank-you {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    &--titlePrimary {
+      font-size: 22px;
+      text-align: center;
+      color: $color_green;
+    }
+  }
+
+  &__inner {
+    width: 650px;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    &--icon {
+      height: 140px;
+      margin: 2rem 0;
+
+      @media screen and (max-width: 575px) {
+        height: 100px;
+      }
+    }
+
+    span {
+      display: block;
+      background: $color_gray;
+      border: 1px solid $color_gray_text;
+      padding: 1rem;
+      margin: 2rem 5rem;
+      border-radius: 4px;
+
+      @media screen and (max-width: 575px) {
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+.btn-outline-dark-blue{
+  border: 1px solid #2D3E51;
+  color: #2D3E51;
+  font-weight: bold;
+  transition: .3s;
+
+  &:hover{
+    background-color: rgba(0, 0, 0, .03);
+    color: #2D3E51;
+    border: 1px solid #2D3E51;
+  }
+}
+
+.PaymentNotif {
+  &_paymentConfirmation {
+    &_detailTitle {
+      &__2Hn7W {
+        font-size: 14px;
+
+        span {
+          font-size: 20px !important;
+          font-weight: bold;
+
+          @media screen and (max-width: 440px) {
+            font-size: 11px !important;
+          }
+        }
+
+        @media screen and (max-width: 440px) {
+          font-size: 11px;
+        }
+      }
+    }
+
+    &_detailStatus {
+      &__TCU83 {
+        font-size: 14px;
+        background-color : #EFA739 !important;
+
+        @media screen and (max-width: 440px) {
+          font-size: 9px !important;
+        }
+      }
+    }
+
+    &_detailTotalAmount {
+      &__3lyDY {
+        span {
+          font-size: 30px !important;
+
+        @media screen and (max-width: 440px) {
+          font-size: 14px !important;
+        }
+        }
+      }
+    }
+
+    &_buttonConfirm {
+      &__7ldCW {
+        font-weight: bold;
+      }
+    }
+
+    &_label {
+      &__3caHz {
+        font-size: 14px;
+        color: $color_black !important;
+
+        @media screen and (max-width: 440px) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+.ThankYou {
+  &_thankyou {
+    &_inner {
+      &__3kNTN {
+
+        h3 {
+          @media screen and (max-width: 440px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.register-page {
+  &-container {
+    // margin-bottom: 5rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @media screen and (max-width: 575px) {
+      padding-top: 3rem;
+    }
+    // border-radius: 5px;
+    // background-color: $color_white;
+    // box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  }
+
+  &-form {
+    &--label {
+      font-family: "Poppins-bold";
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+
+    #emailHelp {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.widget-register {
+  margin: 1rem 0;
+  // position: absolute;
+  // z-index: -1;
+  width: auto;
+  height: 100%;
+  // top: 0;
+
+  img {
+    height: 100% !important;
+  }
+}

@@ -1,0 +1,69 @@
+.contact-page
+{
+  &-container
+  {
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    border-radius: 5px;
+    background-color: $color_white;
+    // box-shadow: 0 0 15px rgba(0,0,0,.15);
+  }
+
+  &-title
+  {
+    font-family: "Poppins-bold";
+    font-size: 20px;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 440px) {
+      font-size: 11px;
+    }
+  }
+}
+
+.content-contact{
+  padding: 0px !important;
+}
+
+.contact-info
+{
+  margin-bottom: 2rem;
+
+  img
+  {
+    height: 50px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+#widget {
+  &--contact-info {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+      height: auto;
+      margin-bottom: 0;
+    }
+
+    img,
+    iframe {
+      width: 50%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+
+      @media screen and(max-width: 440px) {
+        width: 100%;
+      }
+    }
+
+    iframe {
+      @media screen and(max-width: 440px) {
+        height: 400px;
+      }
+    }
+  }
+}

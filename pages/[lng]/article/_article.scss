@@ -1,0 +1,177 @@
+.information {
+	&__content {
+		max-width: 100%;
+		align-content: center;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+#about-us {
+	&-custom-line-1,
+	&-custom-line-2,
+	&-custom-line-3,
+	&-custom-line-4
+	{
+		border-top: 4px solid #F8C12E;
+		width: 110px;
+		margin-top: 0;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 48px;
+		letter-spacing: 3px;
+		margin-top: 50px;
+		font-weight: bold;
+
+		@media screen and(max-width: 440px) {
+			font-size: 20px;
+		}
+	}
+
+	&__description {
+		font-size: 20px;
+		margin: 20px auto 0;
+		text-align: center;
+		width: 70%;
+		letter-spacing: 1px;
+
+		@media screen and(max-width: 440px) {
+			font-size: 11px;
+			width: 90%;
+		}
+	}
+
+	&__number {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		@media screen and(max-width: 440px) {
+			font-size: 20px;
+		}
+
+		&-count-1,
+		&-count-2,
+		&-count-3 {
+			color: #2296CB;
+			font-size: 48px;
+			font-weight: bold;
+
+			@media screen and(max-width: 440px) {
+				font-size: 20px;
+			}
+		}
+
+		&-description-1,
+		&-description-2,
+		&-description-3 {
+			font-size: 24px;
+			margin-top: 10px;
+
+			@media screen and(max-width: 440px) {
+				font-size: 11px;
+			}
+		}
+	}
+
+	&__location {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+
+		img,
+		iframe {
+			width: 50%;
+			flex-grow: 1;
+			flex-shrink: 1;
+			flex-basis: auto;
+
+			@media screen and(max-width: 440px) {
+				width: 100%;
+			}
+		}
+
+		iframe {
+			@media screen and(max-width: 440px) {
+				height: 400px;
+			}
+		}
+	}
+
+	&__brand {
+		&-title {
+
+			&-1,
+			&-2,
+			&-3 {
+				font-weight: bold;
+				font-size: 32px;
+
+				@media screen and(max-width: 440px) {
+					font-size: 17px;
+				}
+			}
+		}
+
+		&-content {
+			&-1,
+			&-2,
+			&-3 {
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				margin-top: 5px;
+
+				&>div {
+					color: rgba(0, 0, 0, .4);
+					font-size: 25px;
+					font-weight: bold;
+					margin: 5px 20px;
+
+					@media screen and(max-width: 440px) {
+						font-size: 14px;
+					}
+				}
+
+				@media screen and(max-width: 440px) {
+					justify-content: space-between;
+					font-size: 17px;
+				}
+			}
+		}
+	}
+
+	&__follow {
+		&__title {
+			text-align: center;
+			font-size: 32px;
+			font-weight: bold;
+			margin-top: 50px;
+
+			@media screen and(max-width: 440px) {
+				font-size: 17px;
+			}
+		}
+
+		&__icon {
+			text-align: center;
+			margin-top: 30px;
+
+			img {
+				margin: 0 10px;
+				width: 50px;
+				height: 50px;
+
+				@media screen and(max-width: 440px) {
+					margin: 0 5px;
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}

@@ -141,7 +141,7 @@
         "welcome": "Add Gift Card to Your Bag"
     },
     "global": {
-        "continueShopping": "Continue Shopping",
+        "continueShopping": "Close Popup",
         "error": "Error",
         "loading": "Loading",
         "notImplemented": "Not implemented yet"

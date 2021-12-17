@@ -221,7 +221,7 @@
     "welcome": "Tambahkan Kartu Hadiah ke Belanjaan Anda"
   },
   "global": {
-    "continueShopping": "Lanjutkan Berbelanja",
+    "continueShopping": "Tutup Popup",
     "error": "Error",
     "loading": "Mohon Tunggu",
     "notImplemented": "Belum tersedia"

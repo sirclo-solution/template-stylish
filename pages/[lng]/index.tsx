@@ -100,6 +100,8 @@ const Home: React.FC<any> = ({
   const [showModalErrorAddToCart, setShowModalErrorAddToCart] = useState<boolean>(false);
   const [showModalAddToCart, setShowModalAddToCart] = useState<boolean>(false);
   const [showModalNotifyMe, setShowModalNotifyMe] = useState<boolean>(false);
+  const [showNewProduct, setShowNewProduct] = useState<boolean>(true);
+  const [showFeaturedProduct, setShowFeaturedProduct] = useState<boolean>(true);
 
   const handleFailedAddToCart = () => {
     setIsQuickview(false);
@@ -300,12 +302,13 @@ const Home: React.FC<any> = ({
               }
             />
           </LazyLoadComponent>
-            <div className="heading">
+          {showNewProduct && <div className="heading">
               <h5 className="heading__title">{i18n.t("home.newArrivalProducts")}</h5>
-            </div>
-          <div className="row best-seller">
+            </div> }
+            {showNewProduct && <div className="row best-seller">
             <LazyLoadComponent>
               <Products
+                tagName="new-arrivals"
                 itemPerPage={6}
                 withSeparatedVariant={true}
                 isQuickView={setIsQuickview}
@@ -318,6 +321,9 @@ const Home: React.FC<any> = ({
                   format: "webp",
                   quality: 85,
                 }}
+                emptyStateComponent={
+                  <img src='' onError={() => setShowNewProduct(false)}></img>
+                }
                 loadingComponent={
                   <>
                     <div className="col-6 col-md-4 mb-4">
@@ -342,24 +348,25 @@ const Home: React.FC<any> = ({
                 }
               />
             </LazyLoadComponent>
-          </div>
-          <div className="text-center">
+          </div>}
+          {showNewProduct &&<div className="text-center">
             <Link href="/[lng]/products" as={`/${lng}/products`}>
               <a className="btn btn-black-outer btn-short py-3">
                 {i18n.t("home.showAll")}
               </a>
             </Link>
-          </div>
+          </div> }
         </div>
       </section>
       <section>
-        <div className="custom-container">
+        {showFeaturedProduct && <div className="custom-container">
           <div className="heading">
             <h5 className="heading__title">{i18n.t("home.featuredProducts")}</h5>
           </div>
           <div className="row best-seller">
             <LazyLoadComponent>
               <Products
+                tagName="featured"
                 itemPerPage={6}
                 withSeparatedVariant={true}
                 isQuickView={setIsQuickview}
@@ -372,6 +379,9 @@ const Home: React.FC<any> = ({
                   format: "webp",
                   quality: 85,
                 }}
+                emptyStateComponent={
+                  <img src='' onError={() => setShowFeaturedProduct(false)}></img>
+                }
                 loadingComponent={
                   <>
                     <div className="col-6 col-md-4 mb-4">
@@ -404,7 +414,7 @@ const Home: React.FC<any> = ({
               </a>
             </Link>
           </div>
-        </div>
+        </div>}
       </section>
       <section>
         <div className="heading">

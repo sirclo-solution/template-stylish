@@ -162,7 +162,6 @@ const OrderSummaryBox: FC<any> = ({
             expand: <FontAwesomeIcon icon={faChevronUp} color="#F7BE16" className="order-summary-cart_expandButtonIcon" />,
             collapse: <FontAwesomeIcon icon={faChevronDown} color="#F7BE16" className="order-summary-cart_expandButtonIcon" />,
             voucherRemoved: <FontAwesomeIcon icon={faTimes} />,
-            pointsRemoved: <FontAwesomeIcon icon={faTimes} />
           }}
         />
       </div>

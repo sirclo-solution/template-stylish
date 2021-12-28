@@ -279,7 +279,7 @@
         "orderSummary": "Your cart",
         "placeOrder": "Place Order",
         "points": "Points",
-        "pointsApplied": "Points Applied",
+        "pointsApplied": "Points",
         "pointsLeft": "Points Left",
         "shipping": "Shipping Costs",
         "shippingEmtpy": "All field on Shipping Address Form must not be empty",
@@ -289,7 +289,7 @@
         "useVoucher": "Use voucher",
         "viewCart": "View Cart",
         "voucher": "Voucher",
-        "voucherApplied": "Voucher applied"
+        "voucherApplied": "Voucher"
     },
     "pageStepper": {
         "checkoutTitle": "Checkout",

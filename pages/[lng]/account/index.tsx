@@ -46,7 +46,7 @@ const classesAccount = {
   tabItemClassName: "account-page_detail-tab-item",
   linkTabItemClassName: "account-page_detail-tab-item-link",
   linkTabItemActiveClassName: "account-page_detail-tab-item-link--active",
-  tabItemIconClassName: "tab-item-icon",
+  tabItemIconClassName: "d-none",
   tabPaneClassName: "account-page_detail-tab-pane",
   myAccountClassName: "tab-pane-container",
   myAccountContentClassName: "tab-pane-account",

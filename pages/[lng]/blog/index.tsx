@@ -100,7 +100,7 @@ const Blog: FC<any> = ({
             withImage={headerImage}
             lng={lng}
           />
-          <div className="custom-container">
+          <div className="blog-container">
             <div className="row">
               <div className="col-12 col-lg-3 display-web">
                 <div className="row card-recent">

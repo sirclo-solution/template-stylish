@@ -158,7 +158,6 @@ const OrderSummaryBox: FC<any> = ({
           />,
             points:  <img src="/images/mdi_star-circle.svg" alt="icon" />,
             pointsApplied: <h3 className="order-summary__popup--points-textApllied">{i18n.t("orderSummary.points")}</h3>,
-            voucherApplied: <h3 className="order-summary__popup--voucher-textApllied">{i18n.t("orderSummary.voucher")}</h3>,
             close: <FontAwesomeIcon icon={faTimes} height="1em" />,
             expand: <FontAwesomeIcon icon={faChevronUp} color="#F7BE16" className="order-summary_expandButtonIcon" />,
             collapse: <FontAwesomeIcon icon={faChevronDown} color="#F7BE16" className="order-summary_expandButtonIcon" />,

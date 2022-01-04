@@ -363,7 +363,7 @@
     "orderSummary": "Keranjangmu",
     "placeOrder": "Pesan",
     "points": "Poin",
-    "pointsApplied": "Poin Digunakan",
+    "pointsApplied": "Poin",
     "pointsLeft": "Poin Tersisa",
     "shipping": "Biaya Pengiriman",
     "shippingEmtpy": "Semua kolom di alamat pengiriman tidak boleh kosong",
@@ -373,7 +373,7 @@
     "useVoucher": "Gunakan voucher",
     "viewCart": "Lihat Keranjang",
     "voucher": "Voucher",
-    "voucherApplied": "Voucher digunakan"
+    "voucherApplied": "Voucher"
   },
   "pageStepper": {
     "checkoutTitle": "Checkout",

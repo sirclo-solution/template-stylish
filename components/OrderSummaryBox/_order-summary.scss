@@ -397,6 +397,7 @@
     width: 90%;
     overflow: hidden;
     font-family: "poppins-bold";
+    padding-left: 20px;
   }
 
   &_voucherAppliedTextCart {
@@ -632,6 +633,8 @@
   border-right: solid 1px $color_orange;
   padding: 1rem;
   padding-bottom: 0;
+  position: sticky;
+  top : 86px;
 
   &_title {
     font-weight: normal;
@@ -665,7 +668,7 @@
 
 .cartItem {
   display: grid;
-  grid-template-columns: 30% 30% 30% 10%;
+  grid-template-columns: 35% 30% 25% 10%;
   margin-bottom: 0.75rem;
 
   &_title {
@@ -856,7 +859,7 @@
 .order-summary-cart {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 86px;
+  top: 232px;
   border-radius: 5px;
   width: 100%;
 
@@ -912,12 +915,11 @@
       }
 
       &-icon {
-        color: black;
+        color: #000;
+        margin-left: auto;
+        margin-right: 10px;
         display: flex;
-        align-items: right;
-        margin-left: 10px;
-        width: 24px;
-        height: 24px;
+        align-items: center;
       }
 
       &-label {
@@ -968,6 +970,7 @@
     padding: 20px;
     border-left: 1px solid #FBC02D;
     border-right: 1px solid #FBC02D;
+    background: $color_white;
 
     &--label-subtotal {
       font-size: 14px;
@@ -1006,6 +1009,7 @@
     border-left: 1px solid #FBC02D;
     border-right: 1px solid #FBC02D;
     border-bottom: 1px solid #FBC02D;
+    background: $color_white;
 
     @media screen and (max-width: 767px) {
       margin: auto auto 0 !important;
@@ -1440,6 +1444,10 @@
     &.b-right {
       @media screen and (max-width: 767px) {
         border-color: $color_gray;
+      }
+
+      & > :first-child{
+        display: none;
       }
     }
 

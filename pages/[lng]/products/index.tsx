@@ -45,8 +45,7 @@ const classesProductFilter = {
   filterSliderHandleClassName: "products_filterSliderHandle",
   filterSliderTrackClassName: "products_filterSliderTrack",
   filterSliderTooltipClassName: "products_filterSliderTooltip",
-  filterSliderTooltipContainerClassName:
-    "products_filterSliderTooltipContainer",
+  filterSliderTooltipContainerClassName: "products_filterSliderTooltipContainer",
   filterSliderTooltipTextClassName: "products_filterSliderTooltipText",
 };
 
@@ -342,7 +341,6 @@ const ProductsPage: FC<any> = ({
             <div className="col-2 sidebar">
               <ProductFilter
                 classes={classesProductFilter}
-                withPriceInput={true}
                 withPriceValueLabel
                 withTooltip
                 tagType="radio"
